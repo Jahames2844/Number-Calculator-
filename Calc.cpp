@@ -62,6 +62,7 @@ int main()
         return 1;
     } else if (choice == 5) {
         typeEffect("Exiting the program...\n");
+        typeEffect("Program Exited.\n");
         return 0;
     } else {
         typeEffect("Invalid choice. Please try again.\n");
