@@ -20,11 +20,12 @@ int main()
     int choice;
     
     typeEffect("==========================\n");
-    typeEffect(" [1] Addition\n");
-    typeEffect(" [2] Subtraction\n");
-    typeEffect(" [3] Multiplicatioon\n");
-    typeEffect(" [4] Division\n");
-    typeEffect(" [5] Exit\n");
+    typeEffect("|[1] Addition            |\n");
+    typeEffect("|[2] Subtraction         |\n");
+    typeEffect("|[3] Multiplicatioon     |\n");
+    typeEffect("|[4] Division            |\n");
+    typeEffect("|[5] To the power of     |\n");
+    typeEffect("|[6] Exit                |\n");
     typeEffect("==========================\n");
     cin >> choice;
 
@@ -60,10 +61,16 @@ int main()
         Answer = Number1 / Number2;
         typeEffect("The answer is: " + to_string(Answer) + "\n");
         return 1;
-    } else if (choice == 5) {
+    } else if (choice == 6) {
         typeEffect("Exiting the program...\n");
         typeEffect("Program Exited.\n");
         return 0;
+    } else if (choice == 5) {
+        typeEffect("Input Number\n");
+        cin >> Number1;
+        Answer = Number1 * Number1;
+        typeEffect("The answer is: " + to_string(Answer) + "\n");
+        return 1;
     } else {
         typeEffect("Invalid choice. Please try again.\n");
         return 1;
