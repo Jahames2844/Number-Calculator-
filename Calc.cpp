@@ -19,8 +19,13 @@ int main()
     double Answer;
     int choice;
     
-
-    typeEffect(" [1] Addition\n [2] Subtraction\n [3] Multiplication\n [4] Division\n [5] Exit\n");
+    typeEffect("==========================\n");
+    typeEffect(" [1] Addition\n");
+    typeEffect(" [2] Subtraction\n");
+    typeEffect(" [3] Multiplicatioon\n");
+    typeEffect(" [4] Division\n");
+    typeEffect(" [5] Exit\n");
+    typeEffect("==========================\n");
     cin >> choice;
 
     if (choice == 1) {
